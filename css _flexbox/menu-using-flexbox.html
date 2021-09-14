@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            background-color: #777;
+            color: white;
+            display: block;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        /* flex styles */
+        @media screen and (min-width: 568px) {
+            nav ul {
+                display: flex;
+                justify-content: space-between;
+            }
+            nav li {
+                /* flex: 1 1 0; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
